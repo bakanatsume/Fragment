@@ -3,6 +3,7 @@ package com.bipash.fragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.bipash.fragment.fragment.AreaFragment
 import com.bipash.fragment.fragment.SumFragment
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         areaFragment.setOnClickListener{
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.linearContainer, SumFragment())
+                replace(R.id.linearContainer, AreaFragment())
                 addToBackStack(null)
                 commit()
             }
